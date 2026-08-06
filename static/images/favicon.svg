@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Relight Your Beauty">
+  <defs>
+    <linearGradient id="background" x1="8" y1="6" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2b1b16"/>
+      <stop offset="1" stop-color="#100c0b"/>
+    </linearGradient>
+    <linearGradient id="light" x1="18" y1="12" x2="49" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd3a8"/>
+      <stop offset="0.48" stop-color="#e99a62"/>
+      <stop offset="1" stop-color="#b54f29"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#background)"/>
+  <path d="M48 8 30 29h12L20 56l7-20H16L36 8Z" fill="url(#light)" opacity=".18" filter="url(#glow)"/>
+  <path d="M20 49V15h15.3c8 0 13 4.2 13 11.1 0 5.1-2.8 8.7-7.5 10.2L50 49h-9.2l-7.7-11.4h-5V49Zm8.1-18h6.3c3.8 0 5.7-1.5 5.7-4.6 0-3-1.9-4.5-5.7-4.5h-6.3Z" fill="url(#light)"/>
+  <circle cx="49" cy="14" r="3" fill="#ffe4c9" filter="url(#glow)"/>
+</svg>
