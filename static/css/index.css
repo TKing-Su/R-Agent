@@ -1005,6 +1005,11 @@ main > .hero:first-child .author-block {
   background: #fff;
 }
 
+.framework-section .section-lead {
+  max-width: none;
+  white-space: nowrap;
+}
+
 .comparison-section {
   background:
     radial-gradient(circle at 50% 0%, rgba(211, 126, 76, 0.07), transparent 32%),
@@ -1033,8 +1038,10 @@ main > .hero:first-child .author-block {
 }
 
 .visual-panel-framework {
-  padding: clamp(1rem, 2.5vw, 2rem);
-  background: #0d0c0b;
+  padding: clamp(0.75rem, 1.8vw, 1.5rem);
+  border-color: rgba(99, 74, 61, 0.12);
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(58, 37, 27, 0.08);
 }
 
 .visual-panel-comparison {
@@ -1110,6 +1117,10 @@ main > .hero:first-child .author-block {
 
   .section-lead {
     margin-bottom: 2rem;
+  }
+
+  .framework-section .section-lead {
+    white-space: normal;
   }
 }
 
